@@ -1,5 +1,19 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="multimedia_playwav" id="41" x="150" y="160">
     <field name="WAV">_SndTest</field>
+    <next>
+      <block type="robot_delay" id="162" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="169">
+            <field name="NUM">1000</field>
+          </block>
+        </value>
+        <next>
+          <block type="multimedia_playwav" id="176">
+            <field name="WAV">_Start</field>
+          </block>
+        </next>
+      </block>
+    </next>
   </block>
 </xml>
